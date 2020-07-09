@@ -27,3 +27,5 @@ look for valid submissions -> match submission id to user_id -> get password and
 
 username:password
 jU9KdEBhtp8Qd5Zt:jU9KdEBhtp8Qd5Zt
+
+There was also an admin user and once we logged in, we were given the debug binary. The second part of this challenge was to actually pwn the binary but we unfortunately ran out of time.
