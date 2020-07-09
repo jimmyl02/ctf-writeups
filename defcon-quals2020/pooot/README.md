@@ -5,6 +5,7 @@ https://gist.github.com/terjanq/cd811311014dc16ef23d680c0ea89562
 
 https://medium.com/bugbountywriteup/pooot-writeup-217384a6b69c
 
+```javascript
 var sus = []
 
 testPort = (base, port=6379) => {
@@ -45,3 +46,4 @@ await testPort(b[i], port)
 }
 }
 })()
+```
