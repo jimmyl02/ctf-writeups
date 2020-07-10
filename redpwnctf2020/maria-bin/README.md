@@ -1,1 +1,1 @@
-I solved this challenge after the CTF and I relied heavily on terjanq's solution to learn about service workers and xs-search using error codes.
+I solved this challenge after the CTF and I relied heavily on terjanq's solution to learn about service workers and xs-search using error codes. The other component was that the decrypt function did not call .final() so it did not actually verify the contents of the token
