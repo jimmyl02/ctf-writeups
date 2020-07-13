@@ -6,3 +6,4 @@ Files in this repo:
 - exploit.js - xs-search using status codes
 - exploit_csp.js - xs-search using CSP
 - exploit_cspcorrectorder.js - xs-search using CSP and some slight modifications [is essentially the same as exploit_csp.js]
+- sw.js - service worker which converts GET requests to POST requests
