@@ -1,6 +1,6 @@
 The challenge was essentially abusing a TURN server to proxy requests which should be from peer to peer and instead use that to send requests to the internal redis server. From there, we had to escape the redis server and get RCE in order to cat the flag.txt in the root directory.
 
-In order to abuse the turn server, we used a tool called [Turner](https://github.com/staaldraad/turner) to proxy our requests to HTTP.
+In order to abuse the TURN server, we used a tool called [Turner](https://github.com/staaldraad/turner) to proxy our requests to HTTP.
 
 Once turner is downloaded and installed, just use the command `./turner -server web.chal.csaw.io:3478` to spawn a proxy on port 8080 that will forward the requests to the internal network.
 
