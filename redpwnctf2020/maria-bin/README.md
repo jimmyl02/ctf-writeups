@@ -2,6 +2,8 @@ I solved this challenge after the CTF and I relied heavily on terjanq's solution
 
 One interesting thing for CSP approach was that the frame source has to be the same one as was being searched via a post request, `https://app.maria-bin.tk/search`, because this was the only way I could get the method of seeing if the page errored to work. This is inherently because on first load the src will be the same as when the form is sent even though one is a GET request and one is a POST request which means no second onload is called. Then, if the page errors, the second onload will be called.
 
+Total credits to ginkoid for creating such a cool challenge and helping me through solving it.
+
 Files in this repo:
 - exploit.js - xs-search using status codes
 - exploit_csp.js - xs-search using CSP
